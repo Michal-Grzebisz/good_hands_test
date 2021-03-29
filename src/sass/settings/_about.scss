@@ -1,0 +1,70 @@
+.home {
+  &__about {
+    display: flex;
+    background-color: var(--color-primary);
+
+
+    &__content {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      color: var(--color-text);
+
+
+
+      h1 {
+        font-size: 2.375rem;
+        position: relative;
+
+        &:after{
+          content: "";
+          display: block;
+          position: absolute;
+          width: 253px;
+          height: 33px;
+          background-image: url("../../assets/Decoration.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          left: calc(50% - 126.5px);
+          top: 200%;
+        }
+
+      }
+
+
+      span {
+        margin-top: 114px;
+        font-size: 1.875rem;
+        padding:0 150px 0 150px;
+        line-height: 1.5;
+        position: relative;
+
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          background-image: url("../../assets/Signature.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 210px;
+          height: 150px;
+          left: 63%;
+          top: 100%;
+        }
+      }
+    }
+
+    &__image {
+      width: 50%;
+      height: 935px;
+      background-image: url("../../assets/People.jpg");
+      background-position-x: -40px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+  }
+}

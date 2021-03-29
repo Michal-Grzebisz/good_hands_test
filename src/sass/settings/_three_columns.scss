@@ -1,0 +1,47 @@
+.home {
+  &__three__columns {
+    display: flex;
+    background-image: url("../../assets/3 Columns Background.png");
+    color: #5E5322;
+
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      &:nth-child(1){
+        margin-left: 163px;
+      }
+
+      &:nth-child(2) {
+        margin: 0 286px 0 286px;
+      }
+
+      &:nth-child(3){
+        margin-right: 163px;
+      }
+
+
+      h1 {
+        font-size: 5.625rem;
+        font-family: var(--font-base);
+        color: var(--color-info);
+        font-weight: 300;
+        margin-top:46px;
+        padding: 16px 0 16px 0;
+      }
+
+      h2 {
+        font-size: 1.125rem;
+      }
+
+      span {
+        margin: 28px 0 86px 0;
+        font-size: 1rem;
+        line-height: 1.8;
+        text-align: center;
+      }
+    }
+  }
+}

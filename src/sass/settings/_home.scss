@@ -1,0 +1,339 @@
+@import "colors";
+@import "three_columns";
+@import "steps";
+@import "about";
+
+
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  color: var(--color-text);
+  font-family: var(--font-base);
+
+  &__image {
+    height: 100%;
+    width: 50%;
+    background-image: url("../../assets/Home-Hero-Image.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 105%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    padding: 46px 0 0 0;
+    width: 50%;
+  }
+
+  &__login {
+    display: flex;
+    padding: 0 142px 0 0;
+    justify-content: flex-end;
+
+  }
+
+  &__login > a {
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    padding: 9px 10px 9px 10px;
+    color: var(--color-secondary);
+    font-size: 0.875rem;
+
+    &:hover {
+      border: solid 0.75px var(--color-columns);
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 17px 142px 0 0;
+  }
+
+  &__nav > a {
+    font-size: 1.125rem;
+    padding: 0 9px 0 9px;
+  }
+
+  &__info {
+    font-size: 2.375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position:relative;
+
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 253px;
+        height: 33px;
+        background-image: url("../../assets/Decoration.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: calc(50% - 126.5px);
+        top: 47%
+      }
+
+      & > a {
+        margin-top: 50px;
+      }
+    }
+
+    &__buttons {
+      margin-top: 123px;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      a {
+        text-decoration: none;
+        font-size: 2.25rem;
+        font-weight: 300;
+        color: var(--color-text);
+        text-align: center;
+        border: 0.75px solid var(--color-text);
+        padding: 13px 93px 13px 93px;
+        margin-right: 22px;
+        margin-left: 22px;
+
+        &:last-child {
+          padding: 13px 51px 13px 51px;
+        }
+      }
+
+    }
+
+
+  }
+
+
+  &__help {
+    display: flex;
+    flex-direction: column;
+    margin: 0 278px 0 278px;
+    font-family: var(--font-base);
+
+
+    h1 {
+      text-align: center;
+      margin-top: 70px;
+      font-size: 2.375rem;
+      color: var(--color-text);
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 253px;
+        height: 33px;
+        background-image: url("../../assets/Decoration.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: calc(50% - 126.5px);
+        top: 200%
+      }
+    }
+
+    h2 {
+      margin-top: 70px;
+      padding: 0 352px 0 352px;
+      text-align: center;
+      font-size: 1.375rem;
+      color: var(--color-text);
+    }
+
+
+
+    &__options{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin-top: 120px;
+      justify-content: center;
+
+      a {
+        text-decoration: none;
+        padding: 23px 42px 23px 42px;
+        font-size: 1.5rem;
+        color: var(--color-text);
+
+        &:focus {
+          border: 0.75px solid var(--color-text);
+        }
+      }
+
+
+      &__content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 66px;
+
+        &__buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          a {
+            text-decoration: none;
+            font-size: 1.125rem;
+            padding: 13px 15px 13px 15px;
+            color: var(--color-text);
+          }
+        }
+
+        &__info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding:16px 0 16px 0;
+          border-bottom: 0.75px solid var(--color-secondary);
+
+          &:last-child {
+            border-bottom: 0.75px solid transparent;
+          }
+
+          span {
+            padding-right: 37px;
+            color: var(--color-text);
+          }
+
+          &__text {
+
+
+            h3 {
+              font-size: 1.625rem;
+              color: var(--color-text);
+              font-family: var(--font-secondary);
+              font-weight: 300;
+            }
+
+            span {
+              font-size: 1.125rem;
+              color: var(--color-text);
+              font-family: var(--font-secondary);
+              font-weight: 300;
+              padding-bottom: 31px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url("../../assets/Background-Contact-Form.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(255,255,255,0.8)
+    }
+
+    &__name {
+      display: flex;
+
+      &__group {
+        width: 50%;
+        padding-bottom: 40px;
+
+        &:first-child {
+          margin-right: 16px;
+        }
+      }
+    }
+
+    &__submit {
+      text-align: right;
+    }
+
+    h2 {
+      font-size: 2.375rem;
+      color: var(--color-text);
+      padding-right: 236px;
+      z-index: 1;
+    }
+
+
+    form {
+      padding-right: 142px;
+      padding-bottom: 319px;
+      margin-top: 128px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+
+      label {
+        display: block;
+        font-size: 1rem;
+        padding-bottom: 10px;
+      }
+
+
+      input {
+        height: 18px;
+        border: none;
+        border-bottom: 1px solid var(--color-secondary);
+        background-color: transparent;
+        width: 100%;
+
+        &::placeholder {
+          color: #3C3C3C26
+
+        }
+      }
+
+      textarea {
+        resize: none;
+        overflow: auto;
+        width: 528px;
+        height: 97px;
+        border: none;
+        border-bottom: 1px solid var(--color-secondary);
+        margin-bottom: 40px;
+        background-color: transparent;
+        outline: none;
+
+        &::placeholder {
+          color: #3C3C3C26
+
+        }
+      }
+
+      button {
+        align-items: flex-end;
+        width: 150px;
+        height: 50px;
+        background-color: transparent;
+        border: 0.75px solid var(--color-text);
+      }
+    }
+  }
+}
